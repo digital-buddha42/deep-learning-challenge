@@ -27,6 +27,15 @@ Compiling, Training, and Evaluating the Model
 How many neurons, layers, and activation functions did you select for your neural network model, and why?
   Neurons: 200, 120, 60, 20, 1 = 401 total for really no reason
   Layers 4
-Were you able to achieve the target model performance?
+Were you able to achieve the target model performance? No
+
 What steps did you take in your attempts to increase model performance?
+- More Epochs
+- More Layers
+- Bucketing the ASK_AMT values, scaling and training on that data
+- Adding more Epochs, layers, and nodes after bucketing the ASK_AMT
+- Finally I tried to automate the model tuning and cast way too big a net. This ended up trying +250 model configuartions in over 2.5 hours and I gave up.
+
 Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+
+My models are not very accurate, but Given enough time and the right direction, it could be better. A birdy told me higher accuracy can be achieved by adding back in the NAME—Identification column but I cannot explain this unless name has some correlation. Maybe better sounding company names have a better success rate.
